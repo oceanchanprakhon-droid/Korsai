@@ -98,6 +98,14 @@
 
   </div>
 
+  <div class="card">
+  <div class="question">What is overthinking?</div>
+  <div class="answer">
+    Overthinking is when the mind repeats the same thoughts again and again.
+    The process feels active, but it does not create new understanding.
+  </div>
+</div>
+
   <script>
     const questions = document.querySelectorAll('.question');
 
@@ -111,23 +119,3 @@
   </script>
 </body>
 </html>
-
-<div class="card">
-  <div class="question">What is overthinking?</div>
-  <div class="answer">
-    Overthinking is when the mind repeats the same thoughts again and again.
-    The process feels active, but it does not create new understanding.
-  </div>
-</div>
-
-<script>
-  const questions = document.querySelectorAll('.question');
-
-  questions.forEach(q => {
-    q.addEventListener('click', () => {
-      const answer = q.nextElementSibling;
-      answer.style.display =
-        answer.style.display === 'block' ? 'none' : 'block';
-    });
-  });
-</script>
