@@ -1,113 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Simple Q&A Wiki</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <style>
-    :root{
-      --bg:#0f172a;
-      --fg:#e5e7eb;
-    }
-
-    *{ box-sizing:border-box; }
-
-    body{
-      margin:0;
-      min-height:100vh;
-      background:var(--bg);
-      color:var(--fg);
-      font-family: system-ui, sans-serif;
-      display:flex;
-      justify-content:center;
-      align-items:flex-start;
-      padding:24px;
-    }
-
-    .container{
-      width:100%;
-      max-width:700px;
-    }
-
-    h1{
-      margin-top:0;
-      text-align:center;
-    }
-
-    .card{
-      border:1px solid rgba(255,255,255,0.15);
-      border-radius:12px;
-      padding:16px;
-      margin-bottom:16px;
-    }
-
-    .question{
-      font-size:18px;
-      font-weight:600;
-      cursor:pointer;
-    }
-
-    .answer{
-      margin-top:8px;
-      font-size:15px;
-      line-height:1.5;
-      display:none;
-    }
-
-    .footer{
-      text-align:center;
-      font-size:13px;
-      opacity:0.7;
-      margin-top:24px;
-    }
-  </style>
+  <meta charset="UTF-8">
+  <title>Animal World</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-  <div class="container">
 
-    <h1>Simple Q&A Wiki</h1>
+  <header>
+    <h1>Animal World</h1>
+    <p>Simple facts about animals around the world</p>
+  </header>
 
-    <div class="card">
-      <div class="question">What is HTML?</div>
-      <div class="answer">
-        HTML stands for HyperText Markup Language.
-        It is used to structure content on the web.
-      </div>
-    </div>
+  <main>
 
-    <div class="card">
-      <div class="question">What is CSS?</div>
-      <div class="answer">
-        CSS stands for Cascading Style Sheets.
-        It controls the appearance and layout of a website.
-      </div>
-    </div>
+    <article>
+      <h2>Lion</h2>
+      <p>
+        The lion is a large carnivorous mammal.
+        It usually lives in groups called prides
+        and is often referred to as the king of the jungle.
+      </p>
+    </article>
 
-    <div class="card">
-      <div class="question">What is JavaScript?</div>
-      <div class="answer">
-        JavaScript is a programming language that makes websites interactive.
-      </div>
-    </div>
+    <article>
+      <h2>Elephant</h2>
+      <p>
+        Elephants are the largest land animals.
+        They are highly intelligent, have strong social bonds,
+        and excellent memory.
+      </p>
+    </article>
 
-    <div class="footer">
-      Static site • No login • No database • Very safe
-    </div>
+    <article>
+      <h2>Dolphin</h2>
+      <p>
+        Dolphins are intelligent marine mammals.
+        They are known for their communication skills
+        and playful behavior.
+      </p>
+    </article>
 
-  </div>
+  </main>
 
-  <script>
-    const questions = document.querySelectorAll('.question');
+  <footer>
+    <p>© 2026 Animal World</p>
+  </footer>
 
-    questions.forEach(q => {
-      q.addEventListener('click', () => {
-        const answer = q.nextElementSibling;
-        answer.style.display =
-          answer.style.display === 'block' ? 'none' : 'block';
-      });
-    });
-  </script>
 </body>
-</html>  
+</html>
